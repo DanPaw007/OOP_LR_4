@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ООП_ЛР_4
+{
+    public class CountryMedal
+    {
+        private string country;
+        private int athletes;
+        private int medals;
+
+        public CountryMedal(string country, int athletes, int medals)
+        {
+            this.country = country;
+            this.athletes = athletes;
+            this.medals = medals;
+        }
+
+        public string GetInformation()
+        {
+            return $"Країна: {country}; Спортсменів: {athletes}; Медалей: {medals}\r\n";
+        }
+    }
+}
